@@ -2,8 +2,12 @@
 //Sum and Average of an Array
 #include<stdio.h>
 int main(){
-    int arr[5]={10,20,30,40,50};
+    int arr[5];
     int i,sum=0;
+    printf("Enter Your Value: ");
+    for(i=0; i<5; i++){
+        scanf("%d",&arr[i]);
+    }
     for(i=0; i<5; i++){
         sum=sum+arr[i];
     }
