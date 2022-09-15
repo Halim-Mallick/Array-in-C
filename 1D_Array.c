@@ -1,4 +1,4 @@
-//Single dimensional arrays
+//Single dimensional/Linear arrays
 #include<stdio.h>
 int main(){
     int i, arr[]={10,20,30,40,50};
