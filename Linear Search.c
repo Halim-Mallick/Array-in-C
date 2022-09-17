@@ -1,22 +1,30 @@
 // Searching a number (Linear search)
 #include <stdio.h>
 int main() {
-    int arr[]={10,20,30,40,50,60,70};
-    int value,i,pos=-1;
+    int arr[30];
+    int value,i,pos=-1,n;
+    
+    printf("Enter Array Size: ");
+    scanf("%d", &n);
+    printf("Enter array Value: \n");
+    for(i=0; i<n; i++){
+    
+        scanf("%d",&arr[i]);
+    }
     printf("Enter Value you want to search: ");
     scanf("%d",&value);
     
-    for(i=0; i<7; i++){
+    for(i=0; i<n; i++){
         if(value==arr[i]){
            pos=i+1;
            break;
         }
     }
     if(pos==-1){
-        printf("Value is not found");
+        printf("Value is not found\n");
     }
     else{
-        printf("Value is found at possition %d",pos);
+        printf("Value is found at position %d",pos);
     }
     return 0;
 }
